@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Connect with Dear.M Cafe on Facebook and Instagram.">
+  <title>Dear.M Cafe | Connect With Us</title>
+  <style>
+    :root {
+      --wine: #800000;
+      --wine-dark: #690000;
+      --paper: #ffffff;
+      --muted: #887b78;
+      --rule: #eee6e3;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--paper); }
+    body {
+      margin: 0;
+      color: var(--wine);
+      background: var(--paper);
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      width: min(100%, 520px);
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: 26px 24px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 1px 20px;
+      border-bottom: 1px solid var(--rule);
+      font-size: 10px;
+      line-height: 1.3;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .header .right {
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-align: right;
+    }
+    .logo-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 0 12px;
+    }
+    .logo {
+      display: block;
+      width: min(100%, 410px);
+      height: auto;
+      max-height: 62svh;
+      object-fit: contain;
+    }
+    .socials {
+      display: grid;
+      gap: 12px;
+      margin-top: 0;
+    }
+    .social {
+      min-height: 76px;
+      display: grid;
+      grid-template-columns: 42px 1px minmax(0, 1fr) 25px;
+      align-items: center;
+      column-gap: 15px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .social:active { transform: scale(.985); }
+    .social:focus-visible {
+      outline: 3px solid #c7a2a2;
+      outline-offset: 4px;
+    }
+    .facebook {
+      color: #fff;
+      background: var(--wine);
+      box-shadow: 0 8px 22px rgba(105, 0, 0, .12);
+    }
+    .instagram {
+      color: var(--wine);
+      background: #fff;
+      border: 1.5px solid var(--wine);
+    }
+    .icon-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 42px;
+      height: 42px;
+    }
+    .icon-wrap svg {
+      display: block;
+      width: 29px;
+      height: 29px;
+    }
+    .facebook .icon-wrap {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.12);
+    }
+    .divider {
+      width: 1px;
+      height: 39px;
+      background: currentColor;
+      opacity: .52;
+      justify-self: center;
+    }
+    .label {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      min-width: 0;
+    }
+    .kicker {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+    .platform {
+      display: block;
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: 3px;
+      line-height: 1.2;
+    }
+    .arrow {
+      justify-self: end;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 11px;
+      letter-spacing: 1.2px;
+    }
+    @media (min-width: 700px) {
+      .page { padding-top: 32px; }
+      .logo-area { padding-top: 30px; padding-bottom: 15px; }
+      .logo { width: min(100%, 400px); }
+      .social { min-height: 82px; }
+    }
+    @media (max-width: 360px) {
+      .page { padding: 20px 15px 24px; }
+      .header { font-size: 9px; letter-spacing: 1.4px; }
+      .header .right { letter-spacing: 1px; }
+      .social {
+        grid-template-columns: 36px 1px minmax(0, 1fr) 20px;
+        column-gap: 10px;
+        padding: 11px 12px;
+      }
+      .icon-wrap, .facebook .icon-wrap { width: 36px; height: 36px; }
+      .icon-wrap svg { width: 26px; height: 26px; }
+      .platform { font-size: 14px; letter-spacing: 2px; }
+      .kicker { font-size: 9px; letter-spacing: 1.5px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <span>DEAR.M CAFE</span>
+      <span class="right">CONNECT WITH US</span>
+    </header>
+
+    <section class="logo-area" aria-label="Dear.M Cafe logo">
+      <img class="logo" src="./dearm-logo.png" alt="Dear.M Cafe coffee cup logo">
+    </section>
+
+    <nav class="socials" aria-label="Social media">
+      <a class="social facebook" href="https://www.facebook.com/dearmcafe/" target="_blank" rel="noopener noreferrer" aria-label="Follow Dear.M Cafe on Facebook">
+        <span class="icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.55 21v-8.2h2.76l.41-3.2h-3.17V7.56c0-.93.26-1.56 1.59-1.56h1.69V3.14C16.59 3.05 15.6 3 14.44 3c-2.43 0-4.09 1.48-4.09 4.2v2.4H7.6v3.2h2.75V21h3.2Z"/></svg>
+        </span>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="label">
+          <span class="kicker">Follow us on</span>
+          <span class="platform">FACEBOOK</span>
+        </span>
+        <span class="arrow" aria-hidden="true">⟶</span>
+      </a>
+
+      <a class="social instagram" href="https://www.instagram.com/dear.mcafe/" target="_blank" rel="noopener noreferrer" aria-label="Follow Dear.M Cafe on Instagram">
+        <span class="icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.6" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="divider" aria-hidden="true"></span>
+        <span class="label">
+          <span class="kicker">Follow us on</span>
+          <span class="platform">INSTAGRAM</span>
+        </span>
+        <span class="arrow" aria-hidden="true">⟶</span>
+      </a>
+    </nav>
+
+    <footer>DEAR.M CAFE · GOOD COFFEE, GOOD COMPANY</footer>
+  </main>
+</body>
+</html>
